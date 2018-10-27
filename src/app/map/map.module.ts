@@ -7,12 +7,14 @@ import { MapComponent } from './map.component';
 import { MapService } from './map.service';
 import { CamelizePipe } from 'ngx-pipes';
 
+import { MAP } from '../../../server/config/dev.js';
+
 @NgModule({
   imports: [
     CommonModule,
     BrowserModule,
     AgmCoreModule.forRoot({
-      apiKey: 'AIzaSyAKBriqFE0TEToIAJ0ggG1jBlVEpPik-0M'
+      apiKey: MAP
     })
   ],
   exports: [
